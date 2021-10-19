@@ -29,7 +29,7 @@
     <% shortUrl.forEach(shorturls=>{ %>
         <tr class="llong">
             <td id="insert1" class="data"><a class="long" href="<%= shorturls.long %>"><%= shorturls.long %></a></td>
-            <td id="insert2" class="data"><a class="gr" href="<%= shorturls.short %>"><%= shorturls.short %></a></td>
+            <td id="insert2" class="data"><a class="gr" href="<%= shorturls.short %>">http://localhost:3000/<%= shorturls.short %></a></td>
             <td id="insert3" class="data"><a href="/delete/<%= shorturls._id %>" class="del" type="submit"><i class="fas fa-trash-alt"></i></a></td>
         </tr>
         <% }) %>
