@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortner</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <link rel="stylesheet" href="all.min.css" type="text/css">
+    <script src="https://kit.fontawesome.com/9cee1c381e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="head">
+    <h1><span class="span">URL</span><span class="span2">SHORTNER</span></h1>
+</div>
+<div class="form-sec">
+    <form action="/shorturl" method="POST">
+        <input class="searchbar" type="text" placeholder="url" name="forurl">
+        <button class="btn" type="submit">SHORT</button>
+    </form>
+</div>
+<div class="allurl">
+<table>
+    <tr>
+        <th class="table">Long Url</th>
+        <th class="table">Short Url</th>
+        <th class="table">Delete</th>
+    </tr>
+    <% shortUrl.forEach(shorturls=>{ %>
+        <tr class="llong">
+            <td id="insert1" class="data"><a class="long" href="<%= shorturls.long %>"><%= shorturls.long %></a></td>
+            <td id="insert2" class="data"><a class="gr" href="<%= shorturls.short %>"><%= shorturls.short %></a></td>
+            <td id="insert3" class="data"><a href="/delete/<%= shorturls._id %>" class="del" type="submit"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <% }) %>
+</table>
+</div>
+<footer class="footer">
+       
+        <p class="copyright">
+          Copyright &copy; 2021. All Rights Reserved || created by Harshit Sharma.
+        </p>
+</footer>
+</body>
+</html>

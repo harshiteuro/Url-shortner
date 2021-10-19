@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    background-color: lavender;
+    min-height: 100vh;
+}
+
+.head{
+    text-align: center;
+    padding: 10px;
+    word-spacing: 15px;
+    size: 90px;
+}
+.span{
+    color:rgb(51, 51, 51);
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.form-sec{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.searchbar{
+    padding: 6px;
+    color:gold;
+    padding-right: 80px;
+    border: outset;
+    border-radius: 20px;
+}
+.searchbar:hover{
+    padding: 6px;
+    padding-right: 81px;
+}
+.btn{
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 20px;
+    padding-left: 25px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+.btn:hover{
+    color: white;
+    transition-duration: 0.4s;
+}
+.allurl{
+  display: flex;
+  justify-content: center;
+  font-family:system-ui;
+  
+}
+.table{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+.data{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#insert1{
+    width: 300px;
+    word-wrap: break-word;
+    font-size: smaller;
+}
+.gr{
+    color: blue(29, 209, 29);
+}
+.long{
+    color: black;
+}
+a:hover{
+ color:darkblue;
+ transition: 0.2s;
+}
+i{
+    font-size: 25px;
+    color: red;
+}
+i:hover{
+    color: darkred;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.a-des:hover{
+
+    transition: 0.3s;
+    transform: scale(1);
+}
+.footer{
+    position: sticky;
+    top: 100%;
+    background-color: black;
+    color: white;
+    height: auto;
+}
+
+.c-list{
+    margin-top: 15px;
+}
+
+.copyright{
+    text-align: center;
+    color: rgba(231, 227, 227, 0.815);
+    font-family: segoe UI;
+    font-size: 13px;
+}
+
+@media all and (min-width: 360px) and (max-width: 670px){
+    body{
+        background-color: lavender;
+    }
+    .table{
+        display: none;
+    }
+    #insert1{
+        
+        display: flow-root;
+    }
+    #insert2{
+     
+        display: block;
+    }
+    #insert3{
+        font-size: smaller;
+        display: block;
+    }
+    #git-ico{
+        color: violet;
+    }
+    .long{
+        color: black;
+    }
+    .gr{
+        color: blue;
+    }
+    i{
+        color: red;
+    }
+    i:hover{
+        color: darkred;
+    }
+}
+@media all and (max-width: 360px){
+    body{
+        background-color: lavender;
+    }
+    .searchbar{
+        margin-left: 40px;
+    }
+    .btn{
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+    .table{
+        display: none;
+    }
+    #insert1{
+        width: 320px;
+    }
+    #insert2{
+        display: block;
+    }
+    #insert3{
+        display: block;
+    }
+    #git-ico{
+        color: violet;
+    }
+    i{
+        color: red;
+    }
+    i:hover{
+        color:darkred;
+    }
+    .long{
+        color: blue;
+    }
+    .gr{
+        color: rgb(29, 209, 29);
+    }
+}
+
