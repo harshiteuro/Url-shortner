@@ -1,21 +1,3 @@
-body{
-    margin: 0;
-    background-color: lavender;
-    min-height: 100vh;
-}
-
-.head{
-    text-align: center;
-    padding: 10px;
-    word-spacing: 15px;
-    size: 90px;
-}
-.span{
-    color:rgb(51, 51, 51);
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
 
 .form-sec{
     display: flex;
@@ -28,6 +10,12 @@ body{
     padding-right: 80px;
     border: outset;
     border-radius: 20px;
+}
+.allurl{
+  display: flex;
+  justify-content: center;
+  font-family:system-ui;
+  
 }
 .searchbar:hover{
     padding: 6px;
@@ -48,12 +36,26 @@ body{
     color: white;
     transition-duration: 0.4s;
 }
-.allurl{
-  display: flex;
-  justify-content: center;
-  font-family:system-ui;
-  
+body{
+    margin: 0;
+    background-color: lavender;
+    min-height: 100vh;
 }
+
+.head{
+    text-align: center;
+    padding: 10px;
+    word-spacing: 15px;
+    size: 90px;
+}
+.span{
+    color:rgb(51, 51, 51);
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
 .table{
     padding-top: 50px;
     padding-right: 50px;
